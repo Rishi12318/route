@@ -1,12 +1,11 @@
-﻿# route
-# route
-Techniques Used
-Real-World Routing: Uses the OSRM (Open Source Routing Machine) API to calculate the precise driving route and polyline geometry between start and destination coordinates.
-Geocoding & Text-Based Input: Integrates an offline/in-memory geocoding system to allow users to input simple text locations (e.g., "New York, NY") which are then dynamically mapped to latitude and longitude.
-Greedy Look-Ahead Algorithm: Features a custom optimization algorithm that projects ahead along the route up to the vehicle's maximum range (500 miles) to identify the cheapest fuel stations, ensuring maximum cost savings.
-Spatial Data Filtering: Analyzes route waypoints to filter and assign corridor fuel stations based on calculated haversine distances to efficiently narrow down thousands of fuel stops.
-Interactive Visualization: Uses Leaflet.js mapping to visually render the generated route polyline alongside the optimized refueling stops and calculated fuel cost in real-time.
-Tech Stack: Python, Django REST Framework, JavaScript (Leaflet.js), OSRM API, HTML/CSS.
+﻿# Intelligent Fuel Route Optimizer
 
-Feel free to review the changes in your README.md file and let me know if you want to tweak any of the points!
+### Techniques Used
+- **Real-World Routing**: Uses the OSRM (Open Source Routing Machine) API to calculate the precise driving route and polyline geometry between start and destination coordinates.
+- **Geocoding & Text-Based Input**: Integrates an offline/in-memory geocoding system to allow users to input simple text locations such as "New York, NY" and map them to latitude and longitude.
+- **Greedy Look-Ahead Algorithm**: Projects ahead along the route up to the vehicle's maximum range to identify the cheapest fuel stations and reduce fuel cost.
+- **Spatial Data Filtering**: Filters and assigns corridor fuel stations based on haversine distance to narrow down a large station set efficiently.
+- **Interactive Visualization**: Uses Leaflet.js to render the route polyline, optimized refueling stops, and calculated fuel cost in real time.
+
+**Tech Stack:** Python, Django REST Framework, JavaScript, Leaflet.js, OSRM API, HTML, CSS.
 
