@@ -1,0 +1,7 @@
+Django==5.2.13
+django-cors-headers==4.9.0
+djangorestframework==3.17.1
+requests==2.33.1
+gunicorn==23.0.0
+dj-database-url==3.0.1
+psycopg[binary]==3.2.10

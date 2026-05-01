@@ -1,0 +1,84 @@
+{
+  "clientName": "Thunder Client",
+  "dateExported": "2026-05-01",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "containerId": "",
+      "sortNum": 5000,
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "colId": "history",
+      "name": "Plan Route - Houston to Miami",
+      "url": "http://127.0.0.1:8000/api/plan-route/",
+      "method": "POST",
+      "body": {
+        "raw": "{\n  \"start_location\": \"Houston, TX\",\n  \"end_location\": \"Miami, FL\"\n}",
+        "type": "json"
+      },
+      "tests": []
+    },
+    {
+      "containerId": "",
+      "sortNum": 10000,
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "colId": "history",
+      "name": "Plan Route - LA to Vegas",
+      "url": "http://localhost:8000/api/plan-route/",
+      "method": "POST",
+      "body": {
+        "raw": "{\n  \"start\": {\"lat\": 34.052235, \"lng\": -118.243683},\n  \"end\": {\"lat\": 36.169941, \"lng\": -115.139832}\n}",
+        "type": "json"
+      },
+      "tests": []
+    },
+    {
+      "containerId": "",
+      "sortNum": 20000,
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "colId": "history",
+      "name": "Plan Route - NYC to Chicago",
+      "url": "http://localhost:8000/api/plan-route/",
+      "method": "POST",
+      "body": {
+        "raw": "{\n  \"start\": {\"lat\": 40.712776, \"lng\": -74.005974},\n  \"end\": {\"lat\": 41.878113, \"lng\": -87.629799}\n}",
+        "type": "json"
+      },
+      "tests": []
+    },
+    {
+      "containerId": "",
+      "sortNum": 30000,
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "colId": "history",
+      "name": "Plan Route - SF to LA",
+      "url": "http://localhost:8000/api/plan-route/",
+      "method": "POST",
+      "body": {
+        "raw": "{\n  \"start\": {\"lat\": 37.774929, \"lng\": -122.419418},\n  \"end\": {\"lat\": 34.052235, \"lng\": -118.243683}\n}",
+        "type": "json"
+      },
+      "tests": []
+    }
+  ]
+}

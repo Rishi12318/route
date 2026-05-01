@@ -6,14 +6,19 @@ backed by OpenStreetMap data.  Makes exactly ONE HTTP call per request.
 
 Public endpoint: http://router.project-osrm.org
 """
-import math
 import logging
-import requests
+import math
+import os
 from typing import Dict, List, Tuple
+
+import requests
 
 logger = logging.getLogger(__name__)
 
-OSRM_BASE = "http://router.project-osrm.org/route/v1/driving"
+OSRM_BASE = os.environ.get(
+    "OSRM_BASE_URL",
+    "http://router.project-osrm.org/route/v1/driving",
+)
 REQUEST_TIMEOUT = 10          # seconds
 AVG_SPEED_KMH   = 100.0       # fallback when OSRM duration unavailable
 EARTH_RADIUS_KM = 6371.0
