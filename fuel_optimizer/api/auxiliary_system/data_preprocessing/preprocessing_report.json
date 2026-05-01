@@ -1,0 +1,14 @@
+{
+  "original_rows": 8151,
+  "rows_removed": {
+    "missing_values": 620,
+    "duplicates": 26,
+    "coord_duplicates": 7269,
+    "invalid_lat": 0,
+    "invalid_lng": 0,
+    "invalid_price": 0
+  },
+  "final_rows": 236,
+  "processing_time_seconds": 1.063,
+  "data_quality_score": 0.029
+}
