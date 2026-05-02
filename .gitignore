@@ -1,0 +1,26 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.sqlite3
+
+# Tooling/runtime artifacts
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
