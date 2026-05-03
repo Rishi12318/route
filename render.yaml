@@ -7,9 +7,9 @@ services:
     name: fuel-optimizer
     env: python
     plan: free
-    buildCommand: pip install -r fuel_optimizer/requirements.txt
+    buildCommand: cd fuel_optimizer && pip install -r requirements.txt
     preDeployCommand: cd fuel_optimizer && python manage.py migrate --noinput
-    startCommand: gunicorn fuel_optimizer.fuel_optimizer.wsgi:application --chdir fuel_optimizer
+    startCommand: cd fuel_optimizer && gunicorn fuel_optimizer.wsgi:application
     autoDeploy: true
     envVars:
       - key: SECRET_KEY
